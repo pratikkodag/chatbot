@@ -1,13 +1,6 @@
 import streamlit as st
 import os
-import subprocess
-
-try:
-    import google.generativeai as genai
-except ImportError:
-    # Install the package if it is not found
-    subprocess.run(['pip', 'install', 'google-generativeai'])
-    import google.generativeai as genai
+import google.generativeai as genai
 # Function to set up a simple chatbot
 def simple_chatbot(message):
     api_key = "AIzaSyA34MZ0M6Pb6LVJnXN8adv1DBIOCu_HFcE"  # Hardcoded API key
