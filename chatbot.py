@@ -3,7 +3,7 @@ import os
 import google.generativeai as genai
 # Function to set up a simple chatbot
 def simple_chatbot(message):
-    api_key = "AIzaSyA34MZ0M6Pb6LVJnXN8adv1DBIOCu_HFcE"  # Hardcoded API key
+    api_key = ""  # Hardcoded API key
     genai.configure(api_key=api_key)
 
     model = genai.GenerativeModel(
